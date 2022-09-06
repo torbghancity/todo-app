@@ -1,0 +1,37 @@
+@import 'bootstrap/scss/bootstrap';
+
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black-FD.eot');
+    src: url('../fonts/Vazir-Black-FD.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Black-FD.woff2') format('woff2'),
+         url('../fonts/Vazir-Black-FD.woff') format('woff'),
+         url('../fonts/Vazir-Black-FD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Vazir' !important;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    border-top-right-radius: 0.35rem;
+    border-bottom-right-radius: 0.35rem;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    border-top-left-radius: 0.35rem;
+    border-bottom-left-radius: 0.35rem;
+}
+
+.form-control-invalid{
+    border-color: #dc3545;
+}

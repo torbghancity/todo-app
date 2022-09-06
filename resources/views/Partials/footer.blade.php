@@ -1,0 +1,32 @@
+
+
+<script>
+    $(function(){
+    
+        @if(Session::has('success'))
+            Swal.fire({
+            icon: 'success',
+            title: 'عالی بود!',
+            text: '{{ Session::get("success") }}'
+            })
+            
+        @endif
+
+        @if(Session::has('error'))
+            Swal.fire({
+                icon: 'error',
+                title: 'عالی بود!',
+                text: '{{ Session::get("error") }}'
+            })
+        @endif
+
+        @if(Session::has('warning'))
+            Swal.fire({
+                icon: 'warning',
+                title: 'Oops...',
+                text: '{{ Session::get("warning") }}'
+            })
+        @endif
+    
+    });
+</script>
